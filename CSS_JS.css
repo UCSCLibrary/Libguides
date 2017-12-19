@@ -1,0 +1,2066 @@
+<style>
+/* Global Styles */
+
+*{
+margin:0;
+padding:0;
+}
+
+body {
+	font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0px;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #000;
+	background-color: #eee;
+}
+
+body.front h1.page-title {
+	display: none;
+}
+
+a {
+	color: #02779e;
+}
+
+
+
+.error {
+	color: red;
+}
+
+body.oca ul {
+	margin-left: 20px;
+}
+
+div.box {
+	background-color: #fc3;
+	margin: 10px 10px 18px 10px;
+	padding: 8px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+div.box h2 {
+	margin-top: 10px;
+}
+
+#s-lg-guide-mini-cmd-bar {
+	margin-top: 50px;
+	padding-bottom: 40px;
+}
+
+.header-secondary h2 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-secondary h2 a:hover, .header-secondary h2 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+}
+
+.container {
+    max-width: 1350px;
+}
+
+/* Alert Region */
+
+.region-alert {
+	padding: 12px;
+	background-color: #ff0000;
+	max-width: 1350px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.region-alert a, .region-alert a:link, .region-alert a:visited, .region-alert a:hover, .region-alert a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Header Styles */
+
+.nav > li > a:hover, .nav > li > a:focus {
+    outline: none;
+}
+
+#search-block-form #edit-actions, #search-block-form .form-item-search-block-form {
+display:inline;
+}
+
+.header {
+	max-width: 1350px;
+	margin: 0 auto;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.header-main {
+	background-color: #00457c;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.header-main .site-logo {
+	text-align: center;
+}
+
+.header-main h1 {
+	display: inline-block;
+	padding: 0px;
+	/*font-size: 1px;*/
+	margin: 5px 0px 10px 0px;
+}
+
+.header-main h1 .site-title-mobile {
+	color: #fff;
+	font-size: 18px;
+	padding-left: 1px;
+}
+
+.header-main-menu {
+	font-weight: bold;
+}
+
+.header-main-menu .content {
+	text-align: center;
+	display: block;
+}
+
+.header-main-menu ul {
+	display: inline-block;
+	margin: 8px 0px;
+	background-color: #02779e;
+	padding: 3px 0px 4px 0px;
+}
+
+.header-main-menu ul.menu li.leaf {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+.header-main-menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	background-repeat: no-repeat;
+	padding: 5px 7px;
+	text-align: center;
+	background-image: none;
+	font-size: 14px;
+	
+}
+
+.header-main-menu ul li a:hover {
+	background-color: #ffcc33;
+	text-decoration: none;
+	color: #00457c;
+}
+
+.header-main-sitesearch {
+	margin: 5px 0px;
+}
+
+.header-main-sitesearch img {
+	display: inline;
+	cursor: pointer;
+}
+
+.header-main-sitesearch .form-submit {
+  	background-image: url(https://library.ucsc.edu/sites/default/files/external/images/header-search.png);
+  	background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  	height: 18px;
+  	width: 18px;
+  	border: none;
+  	color: transparent;
+	position: relative;
+	top: 5px;
+}
+
+.header-main-sitesearch form .form-text {
+	border: 1px solid #fff;
+	background-color: #fff;
+	color: #00457c;
+	font-weight: normal;
+	border-radius: 25px;
+	width: 138px;
+	height: 20px;
+	padding: 0px 8px;
+	margin: 0px;
+}
+
+.header-main-sitesearch form .form-hide {
+	display: none;
+}
+
+.header-main-sitesearch form .search {
+	padding: 0px 3px;
+}
+
+.header-secondary {
+	background-color: #02779e;
+	overflow: visible;
+}
+
+.header-secondary h2 {
+	margin: 0px auto;
+	text-align: center;
+	padding: 8px;
+	float: none;
+	color: #fff;
+	font-size: 2.225em;
+	text-transform: uppercase;
+	letter-spacing: 0.035em;
+	line-height: 1.1;
+	display: none;
+}
+
+.header-secondary .header-secondary-menu {
+	float: none;
+	margin: auto;
+	padding: 10px;
+	background-color: #00457c;
+}
+
+.menubutton {
+	text-align: center;
+}
+
+.header-secondary .header-secondary-menu .menubutton {
+	display: block;
+	margin: 0px auto;
+	color: #fff;
+	text-transform: uppercase;
+	width: 80px;
+	border: 1px solid #fff;
+	padding: 7px 0px;
+}
+
+.header-secondary .header-secondary-menu .menubutton:hover {
+	background-color: #02779e;
+	cursor: pointer;
+}
+
+.header-secondary .header-secondary-menu ul.menu {
+	margin: auto;
+	padding: 0px;
+	display: none;
+}
+
+.header-secondary-menu ul li {
+	text-decoration: none;
+	display: block;
+	padding: 0px;
+	list-style-type: none;
+	font-size: .85em;
+	float: none;
+	margin: 0px;
+}
+
+.header-secondary-menu ul li a {
+	color: #fff;
+	display: block;
+	border-bottom: 1px solid #fff;
+	padding: 8px 0px;
+	font-size: 1.2em;
+}
+
+.header-secondary-menu .nav-column ul li a {
+	border-bottom: none;
+}
+
+.header-secondary-menu .mega-menu ul li a {
+    color: #02779e;
+}
+
+.header-secondary-menu ul li a.research {
+	border-top: 1px solid #fff;
+	margin-top: 15px;
+}
+
+.header-secondary-menu .mega-menu ul li a span {
+    color: #000;
+}
+
+.header-secondary-menu ul li a:hover {
+	text-decoration: none;
+	background-color: #ffcc33;
+	color: #00457c;
+}
+
+.header-secondary-menu ul li a span {
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 0px 9px 0px 0px;
+}
+
+.header-secondary-menu ul li a img {
+	padding: 0px 0px 3px 0px;
+}
+
+	/* Mega Menu Styles */
+
+ul.menu > li, ul.nav > li {
+	z-index: -1;
+}
+
+ul.s-lg-subtab-ul {
+	position: relative;
+	z-index: 10;
+}
+
+.header-secondary .header-secondary-menu .mega-menu ul, .header-secondary .header-secondary-menu .mega-menu h3 {
+    text-align: left;
+}
+
+/*.nav-column h3 {
+    text-align: center;
+}*/
+
+.mega-menu ul.menu {
+    margin: 0px;
+}
+
+.header-secondary-menu ul ul li a {
+    padding: 10px;
+}
+
+.header-secondary-menu ul ul li a:hover {
+    background-color: #fff;
+	color: #00457c;
+	
+}.header-secondary-menu ul ul li a:hover span {
+	color: #000;
+}
+
+.header-secondary-menu ul ul li a span {
+    text-transform: none;
+    font-size: .8em;
+    padding: 0px;
+	display: block;
+}
+
+.mega-menu h3 {
+    color: #000;
+    font-size: 1.75em;
+    text-transform: none;
+	margin: 0px 0px 5px 0px;
+}
+
+.header-secondary-menu .mega-menu ul li {
+    font-size: 1.5em;
+	margin: 0px;
+	min-width: 200px;
+}
+
+.header-secondary-menu .mega-menu ul li a {
+	padding: 4px 8px;
+}
+
+.nav,
+.nav a,
+.nav form,
+.nav input,
+.nav li,
+.nav ul {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav li {
+  list-style: none;
+}
+
+/* menu container */
+.nav,
+input {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+.nav {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  z-index: 500;
+}
+
+/* menu list */
+.nav > li {
+  float: left;
+}
+
+/* menu links */
+/*
+.nav > li > a {
+  background: #372f2b;
+  border-left: 1px solid #4b4441;
+  border-right: 1px solid #312a27;
+  color: #fcfcfc;
+  display: block;
+  font-weight: bold;
+  line-height: 3.5;
+  padding: 0 1.25em;
+  position: relative;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  transition: all .3s ease;
+  z-index: 510;
+}
+*/
+.nav > li > a:focus,
+/*.nav > li:hover > a {
+  background: #4b4441;
+}*/
+.nav > li:first-child > a {
+  border-left: none;
+  /*border-radius: 3px 0 0 3px;*/
+}
+
+/* search form */
+.nav-search > form {
+  border-left: 1px solid #4b4441;
+  height: 3.5em;
+  position: relative;
+  width: inherit;
+  z-index: 510;
+}
+.nav-search input[type="text"] {
+  background: #372f2b;
+  color: #999;
+  display: block;
+  float: left;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 1em 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  transition: all .3s ease 1s;
+  width: 0;
+}
+.nav-search input[type="text"]:focus {
+  color: #fcfcfc;
+}
+.nav-search input[type="text"]:focus,
+.nav-search:hover input[type="text"] {
+  padding: 1em 1.25em;
+  transition: all .3s ease .1s;
+  width: 6.875em;
+}
+.nav-search input[type="submit"] {
+  background: #372f2b url(../img/search-icon.png) no-repeat center center; /* IE8 fallback */
+  background: #372f2b url(../img/search-icon.svg) no-repeat center center;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 3.5em;
+  padding: 0 1.25em;
+  transition: all .3s ease;
+}
+.nav-search input:focus,
+.nav-search input[type="submit"]:hover {
+  background-color: #4b4441;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #ffcc33;
+}
+
+/* menu dropdown */
+li .mega-menu {
+  background: #fff;
+  border: 2px solid #02779e;
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  position: absolute;
+  transition: all .3s ease .15s;
+  visibility: hidden;
+  /*width: 860px;*/
+  top: 73px;
+  z-index: 100;
+}
+
+li:hover > .mega-menu {
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+}
+
+.header-secondary-menu ul li:hover > a {
+  text-decoration: none;
+  background-color: #ffcc33;
+  color: #00457c;
+}
+
+/* menu content */
+.nav-column {
+  padding: .5%;
+  float: none;
+  background-color: #02779e;
+}
+
+.mega-menu .nav-column {
+  width: 25%;
+}
+
+.nav-column a {
+  color: #000;
+  display: block;
+  font-weight: normal;
+  line-height: 1.25;
+}
+.nav-column a:hover {
+  color: #2196f3;
+}
+h3 {
+  color: #000;
+  font-size: .95em;
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 1.25em 0 .75em;
+  text-transform: uppercase;
+}
+.highlight {
+  color: #2196f3;
+}
+
+/* above content region */
+
+.region-above-content {
+    background-color: inherit;
+    border-bottom: none;
+}
+
+
+
+
+/* Content Styles */
+
+/* search results */
+
+.gsc-search-box {
+	display: none;
+}
+
+.page table.gsc-table-result {
+    margin: 0px 0px 2px 7px;
+}
+
+.gsc-table-result tbody {
+    border-top: none;
+}
+
+/* aerial photos */
+
+.view-aerial-photos .views-field-field-aerial-index-map {
+	width: 25%;
+}
+
+.region-content a {
+	font-weight: 500;
+}
+
+.region-content li {
+	list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+.region-content .research-tools li {
+    text-indent: 0px;
+}
+
+.region-content .services-banner li {
+    text-indent: 0px;
+	padding-left: 0px;
+}
+
+.SumoSelect {
+    width: 300px;
+}
+
+.page {
+	background-color: #fff;
+}
+
+.page .content {
+	line-height: 1.55;
+}
+
+.page label {
+	display: block;
+	font-weight: normal;
+}
+
+.page label.option {
+	display: inline;
+}
+
+input.form-radio {
+    position: relative;
+    top: -4px;
+}
+
+span.fieldset-legend {
+	margin-bottom: 20px;
+}
+
+.view-endowments li {
+	list-style-type: none;
+}
+
+body.page-news .view-news .views-field-field-main-exhibit-image, 
+body.node-type-article .field-name-field-main-exhibit-image {
+	float: right;
+	margin: 10px;
+}
+
+body.page-news .view-news .views-row {
+	border-bottom: 1px solid #ddd;
+	padding: 35px 10px 15px 10px;
+	clear: both;
+}
+
+body.page-news .view-news .views-row-first {
+	padding: 5px 10px 15px 10px;
+}
+
+body.page-news .view-news .views-field-title {
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0px;
+}
+
+body.page-news .view-news .views-field-created {
+    font-size: 90%;
+    font-style: italic;
+    color: #888;
+}
+
+body.node-type-article .field-name-field-exhibit-subtitle {
+	font-size: 106%;
+	font-weight: bold;
+	margin: 12px 0px;
+}
+
+.views-widget-filter-field_aerial_decade_value {
+	width: 400px;
+}
+
+.page tr.even, .page tr.odd {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 0.1em 0.6em;
+}
+
+.page tr.even {
+    border-bottom: none;
+    background-color: #ececeb;
+}
+
+.page tr.odd {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.page button, .page input[type="submit"] {
+    background-color: #00458c;
+    color: #fff;
+    border: 2px solid #00458c;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin: auto .5em 14px 0;
+    border-radius: 5px;
+    padding: .2em .75em;
+}
+
+.page button:active, .page button:focus, .page button:hover, .page input[type="submit"]:active, .page input[type="submit"]:focus, .page input[type="submit"]:hover {
+    background-color: #fff;
+    color: #00458c;
+}
+
+.col-sm-9, .col-xs-12 {
+    padding-left: 0px;
+}
+
+.columns-2 {
+    border-radius: 5px;
+    column-count: 2;
+    column-gap: 1em;
+    margin-bottom: 1em;
+    padding: 0.8em;
+}
+
+.larger-text {
+    background-color: #dddddd;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 6px 8px;
+	clear: both;
+}
+
+.callout-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.callout-right, .right {
+    float: right;
+    margin: 0 0 0.8em 1em;
+}
+
+.callout-left {
+    float: left;
+    margin: 0 1em 0.8em 0;
+}
+
+.callout-left, .callout-right {
+    width: 30%;
+}
+
+.callout-full, .callout-left, .callout-right {
+    border-radius: 5px;
+    display: table;
+    line-height: 1.2;
+    padding: 0.8em;
+	border: 1px solid #ddd;
+	margin: 12px;
+}
+
+.page img {
+	max-width: 100%;
+	margin: .2em;
+	padding: .5em;
+}
+
+.page .view-news img {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.page table {
+    background: 0 0;
+    border: none;
+    padding: 0;
+    margin: 1em 0 2em;
+    text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.page ul {
+    list-style-position: inside;
+}
+
+/* styles for legacy wysiwyg image upload images */
+
+.imgupl_floating_none
+{
+	float:none;
+	display:block;
+	text-align:center;
+}
+
+.imgupl_floating_none_left
+{
+	float:none;
+	display:block;
+	text-align:left;
+}
+
+.imgupl_floating_none_right
+{
+float:none;
+display:block;
+text-align:right;
+}
+
+.imgupl_floating_left
+{
+  float:left;
+  padding-right:2px;
+  margin-right: 1em;
+  display: table;
+  width: 60px;
+}
+
+.page .imgupl_floating_left img, .page .imgupl_floating_right img
+{
+  max-width: none;
+}
+
+.imgupl_floating_right
+{
+  float:right;
+  padding-left:2px;
+}
+
+img.imgupl_styles_spacing_5, div.imgupl_styles_spacing_5
+{
+  padding:5px;
+}
+
+img.imgupl_styles_spacing_10, div.imgupl_styles_spacing_10
+{
+  padding:10px;
+}
+
+img.imgupl_styles_spacing_20, div.imgupl_styles_spacing_20
+{
+  padding:20px;
+}
+
+img.imgupl_styles_spacing_20_black_border, div.imgupl_styles_spacing_20_black_border
+{
+  margin:20px;
+  border:1px solid #000;
+}
+
+img.imgupl_styles_black_border, div.imgupl_styles_black_border
+{
+  border:1px solid #000;
+}
+
+ div.imgupl_styles_spacing_20  img.imgupl_styles_spacing_20, div.imgupl_styles_spacing_20_black_border img.imgupl_styles_spacing_20_black_border, div.imgupl_styles_spacing_5 img.imgupl_styles_spacing_5, div.imgupl_styles_spacing_10 img.imgupl_styles_spacing_10, div.imgupl_styles_black_border img.imgupl_styles_black_border {
+  border:0px solid transparent;
+  padding:0px;
+  margin:0px;
+}
+
+div.imgupl_styles_spacing_20_black_border .image_title, div.imgupl_styles_black_border .image_title {
+   margin:1px 0px 2px 2px;
+   text-decoration:none;
+}
+
+.content .block-block {
+	clear: both;
+}
+
+.view-news .views_slideshow_cycle_main {
+	width: 900px;
+}
+
+.view-news .views_slideshow_cycle_main-frame {
+	overflow: visible;
+}
+
+.view-news .views-slideshow-cycle-main-frame-row {
+	width: 900px;
+	height: 170px;
+}
+
+.view-news .views-slideshow-cycle-main-frame-row-item {
+	border: 1px solid #666;
+	width: 252px;
+	height: 260px;
+	margin: 6px;
+	border-radius: 6px;
+	overflow: hidden;
+	float: none;
+}
+
+.view-news .views-slideshow-cycle-main-frame-row-item span {
+	display: block;
+}
+
+.view-news .views-slideshow-cycle-main-frame {
+	overflow: auto;
+	height: 550px;
+}
+
+.view-news .views-slideshow-cycle-main-frame-row {
+	height: 170px;
+}
+
+.view-news .views-field-title {
+	font-size: 110%;
+	font-weight: bold;
+	padding: 8px 0px 0px 8px;
+}
+
+.view-news .views-field-field-exhibit-subtitle {
+	padding: 8px 8px 0px 8px;
+}
+
+.view-news .views-field-field-main-exhibit-image {
+	border: 1px solid #666;
+}
+
+.view-news .item-list, .view-news .views_slideshow_controls_text_pause
+{
+	display: none;
+}
+
+.view-news .views-slideshow-controls-text, .view-news .more-link {
+	width: 100%;
+	max-width: 820px;
+}
+
+.view-news .views-slideshow-controls-bottom {
+	padding-bottom: 20px;
+}
+
+.view-news .views-slideshow-controls-text-next {
+	float: right;
+}
+
+.view-news .views_slideshow_controls_text a, .view-news .more-link a {
+	padding: 6px 10px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	background-color: white;
+	text-decoration: none;
+}
+
+.view-news .views_slideshow_controls_text a:hover, .view-news .more-link a:hover {
+	background-color: #ddd;
+}
+
+.page {
+	max-width: 1350px;
+	padding: 10px 10px 25px 10px;
+	border-left: 1px solid #444;
+	border-right: 1px solid #444;
+}
+
+.page .node {
+	/*padding-right: 0px;*/
+}
+
+h1.page-title {
+	font-size: 1.55em;
+	/*border-bottom: 2px #00457c solid;*/
+	display: block;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 500;
+}
+
+ul.services-banner {
+	margin-left: -32px;
+}
+
+ul.services-banner li {
+	list-style-type:  none;
+	width: 178px;
+	height: 165px;
+	float: left;
+	margin-right: 16.5px;
+	margin-bottom: 8px;
+}
+
+ul.services-banner li.first {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-one.png");
+}
+
+ul.services-banner li.first:hover {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-one-hover.png");
+}
+
+ul.services-banner li.second {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-two.png");
+}
+
+ul.services-banner li.second:hover {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-two-hover.png");
+}
+
+ul.services-banner li.third {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-three.png");
+}
+
+ul.services-banner li.third:hover {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-three-hover.png");
+}
+
+ul.services-banner li.fourth {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-four.png");
+}
+
+ul.services-banner li.fourth:hover {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-four-hover.png");
+}
+
+ul.services-banner li.fifth {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-five.png");
+}
+
+ul.services-banner li.fifth:hover {
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-five-hover.png");
+}
+
+ul.services-banner li a {
+	display: block;
+	width: 178px;
+	height: 171px;
+	/*float: left;*/
+	text-align: center;
+	color: #000;
+	padding: 64px 30px 76px 30px;
+	font-size: 1.2em;
+	line-height: 1em;
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-bg-gray.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+ul.services-banner li a:hover {
+	text-decoration: none;
+	background-image:  url("https://library.ucsc.edu/sites/default/files/external/images/servicebar-bg-color.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+}
+
+ul.services-banner li a:visited {
+	text-decoration: none;
+	
+}
+
+ul.services-banner li.five {
+	margin-right: 0px;
+}
+
+/* Sidebar Styles */
+
+body.oca div.region-sidebar {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.text-center {
+  	padding-top: 20px;
+}
+
+.col-xs-12 {
+  	background-color: #fff;
+}
+
+#sidebar {
+	height: 100%;
+	padding: 12px 30px 5px 5px;
+}
+
+#sidebar .block-menu ul.menu {
+    padding: 0px;;
+}
+
+#sidebar .block-menu ul li.expanded {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.region-sidebar ul.menu ul ul,
+.region-sidebar ul.menu ul ul ul,
+.region-sidebar ul.menu ul ul ul ul,
+.region-sidebar ul.menu li.dropdown
+{display: none;}
+
+.region-sidebar ul.menu li {
+	list-style-type: none;
+	width: 100%;
+}
+
+#sidebar .block-menu ul li.expanded, 
+#sidebar .block-menu ul li.collapsed, 
+#sidebar .block-menu ul li.leaf {
+    margin: 0px;
+	padding: 0px;
+	border: none;
+	border-bottom-width: 0px;
+	list-style-image: none;
+    list-style-type: none;
+}
+
+.region-sidebar ul ul li, #sidebar .block-menu ul li.leaf {
+	padding-left: 12px;
+}
+
+#sidebar .block-menu ul li a {
+    display: block;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 8px;
+	margin: 1px 0px;
+	background-image: url("https://library.ucsc.edu/sites/default/files/external/images/menu-arrow.png");
+	background-repeat: no-repeat;
+	background-position: 96.5% center;
+}
+
+#sidebar .block-menu ul li a.active {
+    background-color: #ffcc33;
+	color: #000;
+}
+
+#sidebar .block-menu ul li a:hover {
+    background-color: #ffcc33;
+	text-decoration: none;
+	color: #000;
+}
+
+.page .navbar {
+		display: none;
+	}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+	
+	.page .navbar {
+		display: block;
+	}
+	
+	body.front .page .navbar {
+		display: none;
+	}
+	
+  	.row-offcanvas {
+    	position: relative;
+    	-webkit-transition: all 0.25s ease-out;
+    	-moz-transition: all 0.25s ease-out;
+    	transition: all 0.25s ease-out;
+  	}	
+	
+  	.row-offcanvas-right
+  	.sidebar-offcanvas {
+    	right: -41.6%;
+  	}
+
+  	.row-offcanvas-left
+  	.sidebar-offcanvas {
+    	left: -41.6%;
+  	}
+	
+  	.row-offcanvas-right.active {
+    	right: 41.6%;
+  	}
+	
+  	.row-offcanvas-left.active {
+    	left: 41.6%;
+  	}
+	
+  	.sidebar-offcanvas {
+    	position: absolute;
+    	top: 0;
+    	width: 41.6%;
+  	}
+	
+  	#sidebar {
+    	padding-top:0;
+  	}
+	
+}
+
+.region-below-content {
+	clear: both;
+}
+
+.region-below-content h2 {
+	padding-top: 20px;
+}
+
+/* Footer Styles */
+
+.footer,
+#s-lib-footer-public div
+{
+	background-color: #00457c;
+	color: #fff;
+}
+
+.footer a,
+#s-lib-footer-public div a,
+#s-lib-footer-public .s-lg-text-greyout
+{
+	color: #fff;
+}
+
+#s-lib-footer-public div {
+    background-color: #00457c;
+}
+
+.footer2 {
+	background-color: #00457c;
+	color: #fff;
+	padding: 5px 0px;
+	font-size: .8em;
+	clear: both;
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+body.front .footer2 {
+	margin: 0px auto 0px auto;
+}
+
+.footer2 a {
+	color: #fff;
+}
+
+.footer2 address {
+	margin-bottom: 0px;
+}
+
+.footer2 .contact, .footer2 .accessibility-info, .footer2 .staff-links, .footer2 .social {
+	padding-top: 14px;
+}
+
+.footer2 .creative-commons {
+	font-size: .8em;
+}
+
+.footer2 .creative-commons img {
+	display: block;
+	margin: 0 auto;
+}
+
+.footer2 .contact img {
+	padding: 0px 3px;
+}
+.footer2 .contact, .footer2 .creative-commons, .footer2 .accessibility-info, .footer2 .staff-links, .footer2 .social {
+	text-align: center;
+}
+
+@media only screen and (min-width : 768px) {
+	
+	.view-news .views-slideshow-cycle-main-frame-row-item, .view-news-767plus .views-slideshow-cycle-main-frame-row-item {
+		float: left;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame-row, .view-news-767plus .views-slideshow-cycle-main-frame-row {
+		height: 170px;
+		overflow: visible;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame {
+		height: 280px;
+		overflow: visible;
+	}
+	
+	.footer2 .contact, .footer2 .creative-commons, .footer2 .accessibility-info, .footer2 .staff-links, .footer2 .social {
+		text-align: left;
+	}
+
+}
+
+@media only screen and (min-width : 860px) {
+	
+	.header-main h1 {
+		font-size: 1px;
+	}
+	
+	.header-main h1 .site-title-mobile {
+		display: none;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame-row-item, .view-news-860plus .views-slideshow-cycle-main-frame-row-item {
+		float: left;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame-row, .view-news-860plus .views-slideshow-cycle-main-frame-row {
+		height: 170px;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame-row-item, .view-news-860plus .views-slideshow-cycle-main-frame-row-item {
+		width: 400px;
+		height: 151px;
+	}
+	
+	.view-news .views-field-field-main-exhibit-image, .view-news-860plus .views-field-field-main-exhibit-image {
+		float: left;
+		margin-right: 8px;
+	}
+
+	.view-news .views-slideshow-cycle-main-frame, .view-news-860plus .views-slideshow-cycle-main-frame {
+		height: 170px;
+		overflow: visible;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame, .view-news-860plus .views-slideshow-cycle-main-frame {
+		height: 170px;
+		overflow: visible;
+	}
+	
+	.header-secondary-menu ul li {
+		float: left;
+	}
+	
+		.header-secondary-menu ul li li {
+		float: none;
+	}
+	
+	
+	.mega-menu {
+	  	width: 860px;
+	}
+	
+	.mega-research {
+	  left: -198px;
+	}
+
+	.mega-services {
+		left: -365px;
+	}
+
+	.mega-collections {
+		left: -521px;
+	}
+
+	.mega-about {
+		left: -726px;
+	}
+
+	.header-main {
+		padding: 1px 11px;
+		height: 28px;
+	}
+	
+	.header-main h1 {
+		margin: 0px;
+		float: left;
+		/*font-size: 1px;*/
+	}
+	
+	.header-main-menu {
+		float: right;
+	}
+	
+	.header-main-menu .content {
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.header-main-menu #block-system-main-menu, .header-main-menu #block-menu-menu-main-menu {
+		display: inline-block;
+	}
+	
+	.header-main-menu ul {
+		display: inline-block;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 10px 10px;
+		background-color: transparent;
+	}
+	
+	.header-main-menu ul.menu li.leaf {
+		display: inline;
+		padding: 0px 10px 0px 0px;
+		list-style-type: none;
+		text-align: left;
+	}
+	
+	.header-main-menu ul li a {
+		border: none;
+		background-color: transparent;
+	}
+		.header-main-menu ul li a:hover {
+		text-decoration: underline;
+		background-color: transparent;
+		color: #fff;
+		font-size: 16px;
+	}
+	
+	.header-main-menu ul li a.hours {
+		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-hours.png');
+		padding: 1px 0px 0px 20px;
+	}
+
+	.header-main-menu ul li a.myaccount {
+		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-myaccount.png');
+		padding: 1px 0px 0px 18px;
+	}
+
+	.header-main-menu ul li a.contactus {
+		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-contactus.png');
+		padding: 0px 0px 0px 14px;
+	}
+
+	.header-main-menu ul li a.giving {
+		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-giving.png');
+		padding: 1px 0px 0px 19px;
+	}
+	
+	.header-main-sitesearch {
+		display: inline-block;
+		margin: 0px;
+	}
+	
+	.header-main-sitesearch img {
+		margin: 0 auto;
+		display: inline-block;
+	}
+	
+	.header-main-sitesearch form .form-text {
+		margin: 0px 2px 0px 8px;
+	}
+	
+	.header-secondary h2 {
+		margin: 0px;
+		float: left;
+		text-align: left;
+		display: block;
+	}
+	
+	.header-secondary .header-secondary-menu {
+		float: right;
+		padding: 10px;
+		background-color: transparent;
+	}
+	
+	.header-secondary .header-secondary-menu .menubutton {
+		display: none;
+	}
+	
+	.header-secondary .header-secondary-menu ul.menu {
+		display: block;
+	}
+	
+	.header-secondary-menu ul li {
+		text-decoration: none;
+		display: inline-block;
+		padding: 0px;
+		list-style-type: none;
+		font-size: .77em;
+	}
+	
+	.nav-column {
+  		float: left;
+		background-color: #fff;
+		padding: 2.5%;
+	}
+	
+	.header-secondary-menu ul li a {
+		display: inline-block;
+		border-bottom: none;
+		padding: 5px 10px;
+		font-size: 1em;
+	}
+	
+	.header-secondary-menu ul li a.research {
+		border-top: none;
+		margin-top: 0px;
+	}
+	
+	.nav-column h3 {
+    	text-align: left;
+	}
+
+	.header-secondary-menu ul ul li a {
+    	width: 100%;
+		margin: 0px;
+	}
+	
+	.header-secondary-menu ul ul li a:hover {
+    	background-color: #ffcc33;
+    	border-radius: 0px;
+	}
+
+
+}
+
+@media only screen and (min-width : 1000px) {
+	
+
+	/* styles for databases block */
+	
+	.view-news .views-slideshow-cycle-main-frame-row-item, .view-news-860plus .views-slideshow-cycle-main-frame-row-item {
+		float: left;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame-row, .view-news-860plus .views-slideshow-cycle-main-frame-row {
+		height: 170px;
+		overflow: visible;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame, .view-news-860plus .views-slideshow-cycle-main-frame {
+		height: 170px;
+		overflow: visible;
+	}
+
+	#s-lg-sel-az-widget-1499378976905 {
+		width: 300px;
+	}
+
+	.databases-dropdown {
+		width: 400px;
+		float: left;
+		padding-top: 20px;
+	}
+	
+	.databases-dropdown h2 {
+		margin-top: 0px;
+	}
+
+	.guides-dropdown {
+		width: 760px;
+		padding-left: 380px;
+		padding-top: 20px;
+
+	}
+	
+	.guides-dropdown h2 {
+		margin-top: 0px;
+	}
+
+	#s-lg-sel-guide-widget-1499379943765 {
+		width: 300px;
+	}
+	
+	
+	.mega-menu-mid {
+	  	width: 1000px;
+	}
+
+	.mega-research {
+	  	left: -338px;
+	}
+
+	.mega-services {
+		left: -505px;
+	}
+
+	.mega-collections {
+		left: -661px;
+	}
+
+	.mega-about {
+		left: -866px;
+	}
+	
+}
+
+
+@media only screen and (min-width : 1350px) {
+	
+	.view-news .views-slideshow-cycle-main-frame-row-item, .view-news-860plus .views-slideshow-cycle-main-frame-row-item {
+		float: left;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame-row, .view-news-860plus .views-slideshow-cycle-main-frame-row {
+		height: 170px;
+		overflow: visible;
+	}
+	
+	.view-news .views-slideshow-cycle-main-frame, .view-news-860plus .views-slideshow-cycle-main-frame {
+		height: 170px;
+		overflow: visible;
+	}
+	
+	.mega-menu-wide {
+	  	width: 1350px;
+	}
+
+	.mega-research {
+	  	left: -688px;
+	}
+
+	.mega-services {
+		left: -855px;
+	}
+
+	.mega-collections {
+		left: -1011px;
+	}
+
+	.mega-about {
+		left: -1215.5px;
+	}
+	
+}
+
+
+/*LibGuides Content Styling*/
+
+#s-lg-tabs-container .nav-tabs > li > a {
+background-color: transparent;
+}
+
+#s-lg-guide-tabs .nav-tabs > li {
+    width: 210px;
+}
+
+#s-lg-guide-tabs .nav li {
+float: none;
+}
+/*vertical align guide side nav*/
+
+ul.nav-tabs {
+z-index: 10;
+}
+
+ul.nav-pills {
+z-index: 10;
+}
+
+#s-lg-public-skiplink {
+    padding: 0px;
+}
+
+.s-lib-box .s-lib-box-title {
+font-size: 18px;
+}
+
+#s-lg-guide-header-info h1, .s-lib-header h1 {
+margin-top: 50px;
+margin-left: 15px;
+}
+
+#content_container {
+float: none;
+margin: 0 auto;
+max-width:1350px;
+}
+
+.s-lib-header {
+float:clear;
+margin: 0 auto 0 0;
+max-width: 1350px;
+padding-bottom: 25px;
+padding-left:10px;
+}
+
+#s-lg-guide-tabs {
+padding-left:0px;
+}
+
+.nav-tabs {
+width:85%;
+}
+
+.s-lib-box-content ul, ol {
+padding-left: 20px;
+}
+
+.nav-pills li > a:after {
+content: "❯";
+float: right;
+margin-right: -12px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.s-lg-rss-list-item {
+padding-bottom:10px;
+}
+
+#s-lg-guide-header-info h1 {
+margin-left: 0px;
+}
+
+#s-lg-guide-main a {
+font-weight:500;
+}
+
+.s-lg-er-item-list li, .s-lg-link-list li, .s-lg-system-list li {
+    padding-top: 10px;
+}
+
+#s-lg-guide-tabs-title-bar {
+border-top: 0px;
+}
+
+#lg-content-area {
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+display:table;
+width:100%;
+max-width:1350px;
+border-left: 1px solid #DDD;
+border-right: 1px solid #DDD;
+}
+
+.fa-lg {
+	color:#00457c;
+}
+
+#s-lg-guide-main {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+#s-lg-guide-tabs .nav-tabs > li.active {
+    width: 212px;
+}
+
+a.s-lg-tab-drop.dropdown-toggle { 
+display:none;
+}
+/*hides down arrow for sub-menu items*/
+
+
+</style>
+<script>
+/*
+	Breakpoints.js
+	version 1.0
+	
+	Creates handy events for your responsive design breakpoints
+	
+	Copyright 2011 XOXCO, Inc
+	http://xoxco.com/
+
+	Documentation for this plugin lives here:
+	http://xoxco.com/projects/code/breakpoints
+	
+	Licensed under the MIT license:
+	http://www.opensource.org/licenses/mit-license.php
+
+*/
+(function($) {
+
+	var lastSize = 0;
+	var interval = null;
+
+	$.fn.resetBreakpoints = function() {
+		$(window).unbind('resize');
+		if (interval) {
+			clearInterval(interval);
+		}
+		lastSize = 0;
+	};
+	
+	$.fn.setBreakpoints = function(settings) {
+		var options = jQuery.extend({
+							distinct: true,
+							breakpoints: new Array(320,480,768,1024)
+				    	},settings);
+
+
+		interval = setInterval(function() {
+	
+			var w = $(window).width();
+			var done = false;
+			
+			for (var bp in options.breakpoints.sort(function(a,b) { return (b-a) })) {
+			
+				// fire onEnter when a browser expands into a new breakpoint
+				// if in distinct mode, remove all other breakpoints first.
+				if (!done && w >= options.breakpoints[bp] && lastSize < options.breakpoints[bp]) {
+					if (options.distinct) {
+						for (var x in options.breakpoints.sort(function(a,b) { return (b-a) })) {
+							if ($('body').hasClass('breakpoint-' + options.breakpoints[x])) {
+								$('body').removeClass('breakpoint-' + options.breakpoints[x]);
+								$(window).trigger('exitBreakpoint' + options.breakpoints[x]);
+							}
+						}
+						done = true;
+					}
+					$('body').addClass('breakpoint-' + options.breakpoints[bp]);
+					$(window).trigger('enterBreakpoint' + options.breakpoints[bp]);
+
+				}				
+
+				// fire onExit when browser contracts out of a larger breakpoint
+				if (w < options.breakpoints[bp] && lastSize >= options.breakpoints[bp]) {
+					$('body').removeClass('breakpoint-' + options.breakpoints[bp]);
+					$(window).trigger('exitBreakpoint' + options.breakpoints[bp]);
+
+				}
+				
+				// if in distinct mode, fire onEnter when browser contracts into a smaller breakpoint
+				if (
+					options.distinct && // only one breakpoint at a time
+					w >= options.breakpoints[bp] && // and we are in this one
+					w < options.breakpoints[bp-1] && // and smaller than the bigger one
+					lastSize > w && // and we contracted
+					lastSize >0 &&  // and this is not the first time
+					!$('body').hasClass('breakpoint-' + options.breakpoints[bp]) // and we aren't already in this breakpoint
+					) {					
+					$('body').addClass('breakpoint-' + options.breakpoints[bp]);
+					$(window).trigger('enterBreakpoint' + options.breakpoints[bp]);
+
+				}						
+			}
+			
+			// set up for next call
+			if (lastSize != w) {
+				lastSize = w;
+			}
+		},250);
+	};
+	
+})(jQuery);
+
+
+/* Spencer.js scripts */
+
+jQuery( document ).ready(function() {
+	
+	//replace sidebar with link for mobile
+	jQuery( '<h2 class="hours-link"><a href="http://guides.library.ucsc.edu/libraryhours">Today\'s Hours</a></h2>' ).insertBefore( 'body.front #block-multisearch-multisearch' );
+	jQuery ( 'body.front #sidebar' ).addClass('hidden');
+	jQuery ( 'body.front .navbar' ).addClass('hidden');
+	var viewportWidth = jQuery(window).width();
+	if (viewportWidth > 767) {
+		jQuery( 'body.front #sidebar' ).removeClass('hidden');
+		jQuery( 'body.front .navbar' ).removeClass('hidden');
+		jQuery ( 'body.front h2.hours-link' ).addClass('hidden');
+		jQuery('.view-news').addClass('view-news-767plus');
+	}
+	
+	
+	//add classes to body
+	jQuery('body').addClass('mobile');
+	
+	// modify the html of the secondary menu
+	
+	var menuButton = '<div class="menubutton">Menu</div>';
+	jQuery( menuButton  ).insertBefore( '.header-secondary-menu ul.menu' );
+	jQuery('.menubutton').click(function (e) {
+		e.preventDefault();
+    	jQuery('.header-secondary-menu ul.menu').toggle();
+	});
+	jQuery('.menu-toggle').siblings('.mega-hook').hide();
+	jQuery('.research.menu-toggle').click(function () {
+    	jQuery('.header-secondary-menu .mega-research').toggle();
+	});
+	jQuery('.services.menu-toggle').click(function () {
+    	jQuery('.header-secondary-menu .mega-services').toggle();
+	});
+	jQuery('.collections.menu-toggle').click(function () {
+    	jQuery('.header-secondary-menu .mega-collections').toggle();
+	});
+	jQuery('.about.menu-toggle').click(function () {
+    	jQuery('.header-secondary-menu .mega-about').toggle();
+	});
+
+	if (viewportWidth > 860) {
+		
+		jQuery('.view-news').addClass('view-news-860plus');
+		
+		//remove mobile class to body
+		jQuery('body').removeClass('mobile');
+		jQuery('body').addClass('notmobile');
+		
+		//modify secondary menu
+		jQuery('.header-secondary-menu ul.menu a.mainlink').removeClass('menu-toggle');
+		jQuery('div.mega-hook').addClass('mega-menu');
+		jQuery('.header-secondary-menu a.research').html('<span>Research</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Tools & Help');
+		jQuery('.header-secondary-menu a.services').html('<span>Services</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Borrowing & Spaces');
+		jQuery('.header-secondary-menu a.collections').html('<span>Collections</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>& Scholarly Communication');
+		jQuery('.header-secondary-menu a.about').html('<span>About</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Visit & Contact');
+		
+	}
+	
+	//modify the html of the site search text field
+	//jQuery('.header-main-menu .form-type-textfield').html('<input type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" /><img class="search" src="https://library.ucsc.edu/sites/default/files/external/images/header-search.png">');
+	
+	// toggle the visibility of the site search text field when the spyglass graphic is clicked
+	//jQuery ('.header-main-sitesearch form .form-text').addClass('form-hide');
+	//jQuery('.header-main-sitesearch form .search').click(function (e) {
+		//e.preventDefault();
+    	//jQuery('.header-main-sitesearch form .form-text').toggle('fast');
+	//});
+	
+	// collapse the sidebar on mobile
+	  jQuery('[data-toggle=offcanvas]').click(function() {
+    	jQuery('.row-offcanvas').toggleClass('active');
+	  });
+	
+});
+
+
+$(window).setBreakpoints({
+	distinct: true,
+	breakpoints: [
+		767,
+		860,
+		1000,
+		1350
+	]
+});
+
+jQuery(window).bind('enterBreakpoint767',function() {
+	jQuery('.view-news').addClass('view-news-767plus');
+	
+	jQuery( 'body.front #sidebar' ).removeClass('hidden');
+	jQuery( 'body.front .navbar' ).removeClass('hidden');
+	jQuery ( 'body.front h2.hours-link' ).addClass('hidden');
+	
+});
+
+jQuery(window).bind('exitBreakpoint767',function() {
+	//jQuery('.view-news').removeClass('view-news-767plus');
+	jQuery ( 'body.front h2.hours-link' ).removeClass('hidden');
+	
+});
+
+
+//changes to secondary menu
+jQuery(window).bind('enterBreakpoint860',function() {
+	
+	jQuery('.view-news').addClass('view-news-860plus');
+	
+	jQuery( 'body.front #sidebar' ).removeClass('hidden');
+	jQuery( 'body.front .navbar' ).removeClass('hidden');
+	jQuery ( 'body.front h2.hours-link' ).addClass('hidden');
+	
+	//remove mobile class from body
+		jQuery('body').removeClass('mobile');
+	jQuery('body').addClass('notmobile');
+	
+	//changes to secondary menu
+	jQuery('.header-secondary-menu ul.menu a.mainlink').removeClass('menu-toggle');
+	jQuery('div.mega-hook').addClass('mega-menu');
+	jQuery( '.header-secondary-menu ul' ).show();
+	jQuery('.header-secondary-menu a.research').html('<span>Research</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Tools & Help');
+		jQuery('.header-secondary-menu a.services').html('<span>Services</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Borrowing & Spaces');
+		jQuery('.header-secondary-menu a.collections').html('<span>Collections</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>& Scholarly Communication');
+		jQuery('.header-secondary-menu a.about').html('<span>About</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Visit & Contact');
+	
+});
+
+jQuery(window).bind('enterBreakpoint1000',function() {
+	jQuery( 'body.front #sidebar' ).removeClass('hidden');
+	jQuery( 'body.front .navbar' ).removeClass('hidden');
+	jQuery ( 'body.front h2.hours-link' ).addClass('hidden');
+		//remove mobile class from body
+		jQuery('body').removeClass('mobile');
+	jQuery('body').addClass('notmobile');
+	
+	//changes to secondary menu
+	jQuery('.header-secondary-menu ul.menu a.mainlink').removeClass('menu-toggle');
+	jQuery('div.mega-hook').addClass('mega-menu-mid');
+	jQuery('div.mega-hook').removeClass('mega-menu-wide');
+	jQuery('div.mega-hook').addClass('mega-menu');
+	jQuery( '.header-secondary-menu ul' ).show();
+	jQuery('.header-secondary-menu a.research').html('<span>Research</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Tools & Help');
+		jQuery('.header-secondary-menu a.services').html('<span>Services</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Borrowing & Spaces');
+		jQuery('.header-secondary-menu a.collections').html('<span>Collections</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>& Scholarly Communication');
+		jQuery('.header-secondary-menu a.about').html('<span>About</span><img src="https://library.ucsc.edu/sites/default/files/external/images/header-menu-arrow.png" alt="navigation arrow"><br>Visit & Contact');
+});
+
+jQuery(window).bind('exitBreakpoint1000',function() {
+	jQuery('.view-news').addClass('view-news-860plus');
+	jQuery('div.mega-hook').removeClass('mega-menu-mid');
+	
+});
+	
+jQuery(window).bind('exitBreakpoint860',function() {
+	jQuery('.view-news').removeClass('view-news-860plus');
+	jQuery('div.mega-hook').removeClass('mega-menu-mid');
+	
+	//add mobile class to body
+	jQuery('body').addClass('mobile');
+	jQuery('body').removeClass('notmobile');
+	
+	//mega menu scripts
+	jQuery('.mega-research').hide();
+	jQuery('.mega-services').hide();
+	jQuery('.mega-collections').hide();
+	jQuery('.mega-about').hide();
+
+//changes to secondary menu
+	jQuery('.header-secondary-menu ul.menu a.mainlink').addClass('menu-toggle');
+	jQuery('div.mega-hook').removeClass('mega-menu');
+	jQuery('.header-secondary-menu ul.menu').hide();
+	jQuery('.header-secondary-menu a.research').html('Research');
+	jQuery('.header-secondary-menu a.services').html('Services');
+	jQuery('.header-secondary-menu a.collections').html('Collections');
+	jQuery('.header-secondary-menu a.about').html('About');
+	
+});
+
+jQuery(window).bind('enterBreakpoint1350',function() {
+	jQuery('.view-news').addClass('view-news-860plus');
+	jQuery('div.mega-hook').removeClass('mega-menu-mid');
+	jQuery('div.mega-hook').addClass('mega-menu-wide');
+});
+
+jQuery(window).bind('exitBreakpoint1350',function() {
+});
+
+jQuery( document ).ready(function() {
+	
+	
+					//mega-menu scripts
+	jQuery( "li.research" ).mouseover(function() {
+		if ($('body').hasClass('notmobile')) {
+			jQuery('.mega-research').show();
+		}
+	});
+	jQuery( "li.services" ).mouseover(function() {
+		if ($('body').hasClass('notmobile')) {
+			jQuery('.mega-services').show();
+		}
+	});
+	jQuery( "li.collections" ).mouseover(function() {
+		if ($('body').hasClass('notmobile')) {
+			jQuery('.mega-collections').show();
+		}
+	});
+	jQuery( "li.about" ).mouseover(function() {
+		if ($('body').hasClass('notmobile')) {
+			jQuery('.mega-about').show();
+		}
+	});
+	
+});
+
+$(window).bind("load", function () {
+	$('.research-tools .databases-dropdown select.form-control').SumoSelect({search: true, searchText: 'Start typing a database name…'})
+	$('.research-tools .guides-dropdown select.form-control').SumoSelect({search: true, searchText: 'Start typing a topic…'})
+});
+
+(function ($) {
+
+  $(function () {
+    var googleCSEWatermark = function (id) {
+      var f = $(id)[0];
+      if (f && (f.query || f['edit-search-block-form--2'] || f['edit-keys'])) {
+        var q = f.query ? f.query : (f['edit-search-block-form--2'] ? f['edit-search-block-form--2'] : f['edit-keys']);
+        var n = navigator;
+        var l = location;
+        if (n.platform == 'Win32') {
+          q.style.cssText = 'border: 1px solid #7e9db9; padding: 2px;';
+        }
+        var b = function () {
+          if (q.value == '') {
+            q.style.background = '#FFFFFF url(https://cse.google.com/cse/intl//images/google_custom_search_watermark.gif) left no-repeat';
+          }
+        };
+        var f = function () {
+          q.style.background = '#ffffff';
+        };
+        q.onfocus = f;
+        q.onblur = b;
+//      if (!/[&?]query=[^&]/.test(l.search)) {
+        b();
+//      }
+      }
+    };
+    googleCSEWatermark('#search-block-form.google-cse');
+    googleCSEWatermark('#search-form.google-cse');
+    googleCSEWatermark('#google-cse-results-searchbox-form');
+  });
+
+})(jQuery);
+</script>

@@ -1,0 +1,86 @@
+<body class="s-lg-guide-body">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS777Q2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		{{skip_link}}
+        {{ADMIN_CMD_BAR}}
+        <!-- BEGIN: Page Header -->
+        {{public_header}}
+        <!-- END: Page Header -->
+<div id="lg-content-area">
+        <!-- BEGIN: Guide Info Header -->
+        <div id="s-lg-guide-header" class="s-lib-header s-lib-side-borders">
+			<div class="pull-right">
+				{{ADMIN_MINI_CMD_BAR}}
+			</div>
+            <div id="s-lg-guide-header-info">
+                <h1 id="s-lg-guide-name">{{guide_title}}: {{page_title}}</h1>
+                <div id="s-lg-guide-desc-container">
+                    <span id="s-lg-guide-description">{{guide_description}}</span>
+                </div>
+            </div>
+        </div>
+        <div id="s-lg-guide-tabs-title-bar" class="container s-lib-side-borders"></div>
+        <!-- END: Guide Info Header -->
+
+<!--BEGIN: Content and Columns-->
+<div class="col-md-12" id="content_container">
+
+<div class="col-md-2" id="s-lg-guide-tabs" role="navigation" aria-label="Guide Page Menu">
+<div id="s-lg-tabs-container">
+                <ul class="nav nav-tabs nav-pills" role="menu">
+                    {{guide_nav}}
+                </ul>
+</div>
+</div>
+        <!-- BEGIN: Guide Content -->
+        <div id="s-lg-guide-main" class="col-md-10">
+            {{empty_page_sub_page_list}}
+			{{content}}
+            {{page_prev_next_links}}
+        </div>
+</div>
+</div>
+        <!-- END: Guide Content -->
+</div>
+<!--END: lg-content-area-->
+
+               <!-- BEGIN: Custom Footer -->
+                {{public_footer}}
+		<!-- END: Custom Footer -->
+        <!-- BEGIN: Page Footer -->
+<div id="libguides-sys-footer">
+        <div id="s-lib-footer-public" class="s-lib-footer footer container  s-lib-side-borders">
+            <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
+                <ul id="s-lg-guide-header-attributes" class="">
+                    <li id="s-lg-guide-print-url">
+                        {{print_url_display}}
+                    </li>
+                </ul>
+                <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
+                    {{login_url_display}}                </div>
+            </div>
+            <div class="pad-bottom-sm clearfix">
+                <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
+                    {{guide_subjects}}
+                </div>
+                <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
+                    {{guide_tags}}
+                </div>
+            </div>
+</div>
+        <!-- END: Page Footer -->
+        
+			<div id="s-lib-scroll-top">
+				<a href="javascript:void(0);" onclick="jQuery('html, body').animate({scrollTop: 0}, 750);" title="Back to Top" aria-label="Back to Top"
+				aria-hidden="true">
+					<span class="fa-stack fa-lg">
+					  <i class="fa fa-square-o fa-stack-2x"></i>
+					  <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+					</span>
+				</a>
+			</div>        <div id="s-lib-alert" title="">
+                            <div id="s-lib-alert-content"></div>
+                       </div>   
+	</body>
