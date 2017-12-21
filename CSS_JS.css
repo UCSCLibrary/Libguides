@@ -1715,6 +1715,15 @@ display:none;
 }
 /*hides down arrow for sub-menu items*/
 
+div.alert.alert-info.margin-top-med {
+display:none;
+}
+/*hides Subject Homepage links in guides homepage*/
+
+#s-lg-sel-subjects {
+display:none;
+}
+/*hides Subjects drop-down filter in A-Z list*/
 
 </style>
 <script>
