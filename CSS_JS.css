@@ -125,6 +125,10 @@ display:inline;
 	text-align: center;
 }
 
+.header-main .site-logo img {
+         width: 97px;
+}
+
 .header-main h1 {
 	display: inline-block;
 	padding: 0px;
@@ -1102,6 +1106,9 @@ body.oca div.region-sidebar {
 
 .region-sidebar ul ul li, #sidebar .block-menu ul li.leaf {
 	padding-left: 12px;
+	background-image: url("https://library.ucsc.edu/sites/default/files/external/images/menu-arrow.png");
+	background-repeat: no-repeat;
+	background-position: 96.5% center;
 }
 
 #sidebar .block-menu ul li a {
@@ -1109,16 +1116,16 @@ body.oca div.region-sidebar {
 	color: #000;
 	font-size: 16px;
 	font-weight: bold;
-	padding: 5px 8px;
-	margin: 1px 0px;
-	background-image: url("https://library.ucsc.edu/sites/default/files/external/images/menu-arrow.png");
-	background-repeat: no-repeat;
-	background-position: 96.5% center;
+	padding: 5px 8px 5px 0;
+	margin: 1px 12px;
 }
 
 #sidebar .block-menu ul li a.active {
-    background-color: #ffcc33;
 	color: #000;
+}
+
+#sidebar .block-menu ul li.active-trail {
+	    background-color: #ffcc33;
 }
 
 #sidebar .block-menu ul li a:hover {
@@ -1250,6 +1257,10 @@ body.front .footer2 {
 }
 
 @media only screen and (min-width : 768px) {
+
+	.footer2 iframe {
+		float: right;
+	}
 	
 	.view-news .views-slideshow-cycle-main-frame-row-item, .view-news-767plus .views-slideshow-cycle-main-frame-row-item {
 		float: left;
@@ -1603,7 +1614,7 @@ background-color: transparent;
 }
 
 #s-lg-guide-tabs .nav-tabs > li {
-    width: 210px;
+    width: 250px;
 }
 
 #s-lg-guide-tabs .nav li {
@@ -1707,7 +1718,7 @@ border-right: 1px solid #DDD;
 }
 
 #s-lg-guide-tabs .nav-tabs > li.active {
-    width: 212px;
+    width: 252px;
 }
 
 a.s-lg-tab-drop.dropdown-toggle { 
@@ -2008,8 +2019,6 @@ jQuery(window).bind('exitBreakpoint1350',function() {
 });
 
 jQuery( document ).ready(function() {
-	
-	
 					//mega-menu scripts
 	jQuery( "li.research" ).mouseover(function() {
 		if ($('body').hasClass('notmobile')) {
@@ -2032,11 +2041,6 @@ jQuery( document ).ready(function() {
 		}
 	});
 	
-});
-
-$(window).bind("load", function () {
-	$('.research-tools .databases-dropdown select.form-control').SumoSelect({search: true, searchText: 'Start typing a database name…'})
-	$('.research-tools .guides-dropdown select.form-control').SumoSelect({search: true, searchText: 'Start typing a topic…'})
 });
 
 (function ($) {
@@ -2069,7 +2073,6 @@ $(window).bind("load", function () {
     googleCSEWatermark('#search-block-form.google-cse');
     googleCSEWatermark('#search-form.google-cse');
     googleCSEWatermark('#google-cse-results-searchbox-form');
-  });
-
+  }); 
 })(jQuery);
 </script>
