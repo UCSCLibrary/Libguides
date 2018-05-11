@@ -1,4 +1,4 @@
-/* This file contains breakpoint.js and custom code for the UCSC Libguides site. Add this in the Custom JS/CSS box here: https://ucsc.libapps.com/libguides/lookfeel.php?action=1, wrapped in <script></script> tags. This is paseted after the css code.
+/* This file contains breakpoint.js and custom code for the UCSC Libguides site. Add this in the Custom JS/CSS box here: https://ucsc.libapps.com/libguides/lookfeel.php?action=1, wrapped in <script></script> tags. This is pasted after the css code.
 /*
 	Breakpoints.js
 	version 1.0
