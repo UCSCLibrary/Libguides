@@ -129,7 +129,8 @@ display:inline;
 }
 
 .header-main .site-logo img {
-         width: 97px;
+    width: 87px;
+	margin-top: 3px;
 }
 
 .header-main h1 {
