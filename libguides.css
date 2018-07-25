@@ -129,8 +129,8 @@ display:inline;
 }
 
 .header-main .site-logo img {
-    width: 87px;
-	margin-top: 3px;
+         width: 87px;
+         margin-top: 3px;
 }
 
 .header-main h1 {
@@ -1739,3 +1739,13 @@ display:none;
 display:none;
 }
 /*hides Subjects drop-down filter in A-Z list*/
+
+ul.s-lg-subtab-ul.dropdown-menu > li {
+	display:none;
+}
+/*hides sub-menu pop open on hover over*/
+
+.s-lg-tabs-side .s-lg-subtab-ul {
+	border-left:#DDDDDD solid 2px;
+}
+/*adds gray bar to left of sub-menu items*/
