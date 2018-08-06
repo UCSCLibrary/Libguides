@@ -94,6 +94,9 @@
 /* Spencer.js scripts */
 
 jQuery( document ).ready(function() {
+
+	/* search form placeholder text */
+	jQuery('form.google-cse input.form-text').attr("placeholder", "Search this Site");
 	
 	//replace sidebar with link for mobile
 	jQuery( '<h2 class="hours-link"><a href="http://guides.library.ucsc.edu/libraryhours">Today\'s Hours</a></h2>' ).insertBefore( 'body.front #block-multisearch-multisearch' );

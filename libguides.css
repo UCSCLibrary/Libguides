@@ -111,6 +111,21 @@ div.box h2 {
 display:inline;
 }
 
+form.google-cse input.form-text {
+	background-image:none !important;
+	font-size: 15px;
+    line-height: 140%;
+    padding: 4px;
+    color: #84827c;
+	height: 29px;
+	margin-top: -3px;
+}
+
+#edit-search-block-form--2::placeholder {
+    color: #84827c;
+    opacity: 1;
+}
+
 .header {
 	max-width: 1350px;
 	margin: 0 auto;
@@ -119,7 +134,7 @@ display:inline;
 }
 
 .header-main {
-	background-color: #00457c;
+	background-color: #01589d;
 	padding: 10px;
 	overflow: hidden;
 }
@@ -128,11 +143,14 @@ display:inline;
 	text-align: center;
 }
 
+<<<<<<< HEAD
+=======
 .header-main .site-logo img {
          width: 87px;
          margin-top: 3px;
 }
 
+>>>>>>> f97d1dddfa4b1ef6bdeddb6737baa0a49e7ea40b
 .header-main h1 {
 	display: inline-block;
 	padding: 0px;
@@ -144,10 +162,6 @@ display:inline;
 	color: #fff;
 	font-size: 18px;
 	padding-left: 1px;
-}
-
-.header-main-menu {
-	font-weight: bold;
 }
 
 .header-main-menu .content {
@@ -197,15 +211,7 @@ display:inline;
 }
 
 .header-main-sitesearch .form-submit {
-  	background-image: url(https://library.ucsc.edu/sites/default/files/external/images/header-search.png);
-  	background-repeat: no-repeat;
-  	background-position: 50% 50%;
-  	height: 18px;
-  	width: 18px;
-  	border: none;
-  	color: transparent;
-	position: relative;
-	top: 5px;
+  	display: none;
 }
 
 .header-main-sitesearch form .form-text {
@@ -213,7 +219,6 @@ display:inline;
 	background-color: #fff;
 	color: #00457c;
 	font-weight: normal;
-	border-radius: 25px;
 	width: 138px;
 	height: 20px;
 	padding: 0px 8px;
@@ -1354,8 +1359,8 @@ body.front .footer2 {
 	}
 
 	.header-main {
-		padding: 1px 11px;
-		height: 28px;
+		padding: 10px 10px 4px 10px;
+		height: 45px;
 	}
 	
 	.header-main h1 {
@@ -1399,27 +1404,17 @@ body.front .footer2 {
 		text-decoration: underline;
 		background-color: transparent;
 		color: #fff;
-		font-size: 16px;
+	}
+	
+	.header-main-menu ul li a {
+		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/golddot.png');
+		padding: 1px 0px 0px 16px;
+		background-position: 0% 55%;
 	}
 	
 	.header-main-menu ul li a.hours {
-		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-hours.png');
-		padding: 1px 0px 0px 20px;
-	}
-
-	.header-main-menu ul li a.myaccount {
-		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-myaccount.png');
-		padding: 1px 0px 0px 18px;
-	}
-
-	.header-main-menu ul li a.contactus {
-		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-contactus.png');
-		padding: 0px 0px 0px 14px;
-	}
-
-	.header-main-menu ul li a.giving {
-		background-image: url('https://library.ucsc.edu/sites/default/files/external/images/header-giving.png');
-		padding: 1px 0px 0px 19px;
+		background-image: none;
+		padding: 1px 0px 0px 0px;
 	}
 	
 	.header-main-sitesearch {
