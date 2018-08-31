@@ -1,6 +1,8 @@
+<style>
+
 /* CSS Document */
 
-/* Note: Add this in the Custom JS/CSS box here: https://ucsc.libapps.com/libguides/lookfeel.php?action=1, wrapped in <style></style> tags.
+/* Note: Add this in the Custom JS/CSS box here: https://ucsc.libapps.com/libguides/lookfeel.php?action=1 */
 
 /* Global Styles */
 
@@ -143,14 +145,6 @@ form.google-cse input.form-text {
 	text-align: center;
 }
 
-<<<<<<< HEAD
-=======
-.header-main .site-logo img {
-         width: 87px;
-         margin-top: 3px;
-}
-
->>>>>>> f97d1dddfa4b1ef6bdeddb6737baa0a49e7ea40b
 .header-main h1 {
 	display: inline-block;
 	padding: 0px;
@@ -1740,7 +1734,14 @@ ul.s-lg-subtab-ul.dropdown-menu > li {
 }
 /*hides sub-menu pop open on hover over*/
 
+ul.s-lg-subtab-ul.dropdown-menu {
+min-width:0px;
+}
+/*stops a page with sub-pages from expanding/contracting in the left menu*/
+
 .s-lg-tabs-side .s-lg-subtab-ul {
 	border-left:#DDDDDD solid 2px;
 }
 /*adds gray bar to left of sub-menu items*/
+
+</style>
