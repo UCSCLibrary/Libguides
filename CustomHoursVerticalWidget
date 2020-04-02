@@ -1,0 +1,78 @@
+<!-- Code for Guide Custom CSS/JS -->
+<style>
+.s-lc-whw-head-date, .s-lc-whw-bh, .s-lc-whw-locname {display: none;}
+tr { display: block; float: left; }
+th, td { display: block; border:none !important; }
+td:hover {background-color: #fff !important;}
+thead, tbody {max-width: 150px; display: inline-block; border:none; font-size: 16px;}
+</style>
+
+<!-- Widget or box code -->
+<script>! function (a) {
+    a.LibCalWeeklyGrid = function (s, n) {
+        var r = {
+                iid: 0,
+                lid: 0,
+                systemTime: !1
+            },
+            l = this;
+        l.settings = {};
+        var c = function (e, i, s, n, t) {
+            var r = null === t ? "" : "&date=" + t,
+                a = n ? "&systemTime=1" : "";
+            jQuery.ajax({
+                type: "get",
+                dataType: "jsonp",
+                jsonpCallback: "s_lc_hours_grid_cb_" + s,
+                cache: !0,
+                url: "https://calendar.library.ucsc.edu/" + "/widget/hours/grid?iid=" + l.settings.iid + "&lid=" + s + a + r
+            }).done(function (t) {
+                l.el.html(t), jQuery("#s-lc-whw-next-" + s + ", #s-lc-whw-prev-" + s).on("click", function () {
+                    var t = jQuery(this).data("date");
+                    c(e, i, s, n, t)
+                })
+            })
+        };
+        ! function () {
+            if (l.settings = a.extend({}, r, n), l.el = s, 0 == l.settings.iid) return l.el.text("IID is not setup!");
+            var t = a('script[src*="libcal"][src*="hours_grid.js"]').attr("src"),
+                e = document.createElement("a");
+            e.href = t;
+            var i = "https://" + e.hostname;
+            c(i, l.settings.iid, l.settings.lid, l.settings.systemTime, null)
+        }()
+    }
+}(jQuery);</script> 
+<div id="s-lc-whw866"></div> 
+<script>
+$(function(){ 
+var week866 = new $.LibCalWeeklyGrid( $("#s-lc-whw866"), { iid: 181, lid: 866, systemTime: false }); 
+});
+</script> 
+
+<!-- Please note: The following styles are optional, feel free to modify! //-->
+<style>
+.s-lc-whw thead { background-color: #Fff; }
+.s-lc-whw-head-date { color: #5F5F5F; }
+.s-lc-whw-today-h {  background-color: #fff; }
+.s-lc-whw-today { background-color: #Fff; }
+.s-lc-whw-bh { text-align: right; white-space: nowrap; }
+.s-lc-whw-locname { font-weight: bold;}
+.s-lc-whw-sublocname{ padding-left: 10px!important; }
+.s-lc-whw-footnote { color: #555; font-size: 80%; }
+.s-lc-whw-footnote td:hover { background-color:#fff!important;}
+/* Below styles can be removed if you are already using Bootstap v3 in host page */
+.s-lc-whw-cont {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px;}
+.s-lc-whw-pr, .s-lc-whw-ne{ padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; color: #333; background-color: #fff; display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; white-space: nowrap; }
+.s-lc-whw-pr:disabled { background-color: #fff; }
+.s-lc-whw-ne:disabled { background-color: #fff; }
+.s-lc-whw { width: 100%; margin-bottom: 20px; max-width: 100%; background-color: transparent; border-bottom: none; border-left: none; border-collapse: collapse; border-spacing: 0; }
+.s-lc-whw>tbody>tr>td { padding: 5px; }
+.s-lc-whw>thead>tr>th { vertical-align: bottom; padding: 5px;}
+.s-lc-whw th { border-top: none; border-bottom: none; border-right: none;}
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+@media (max-width: 768px) {
+   .s-lc-whw-cont .table-responsive { width: 100%; margin-bottom: 15px; overflow-y: hidden; overflow-x: scroll; -ms-overflow-style: -ms-autohiding-scrollbar; -webkit-overflow-scrolling: touch; }
+   .s-lc-whw td { white-space: nowrap; }
+}
+</style>
