@@ -417,32 +417,6 @@ input {
   float: left;
 }
 
-/* menu links */
-/*
-.nav > li > a {
-  background: #372f2b;
-  border-left: 1px solid #4b4441;
-  border-right: 1px solid #312a27;
-  color: #fcfcfc;
-  display: block;
-  font-weight: bold;
-  line-height: 3.5;
-  padding: 0 1.25em;
-  position: relative;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
-  transition: all .3s ease;
-  z-index: 510;
-}
-*/
-.nav > li > a:focus,
-/*.nav > li:hover > a {
-  background: #4b4441;
-}*/
-.nav > li:first-child > a {
-  border-left: none;
-  /*border-radius: 3px 0 0 3px;*/
-}
-
 /* search form */
 .nav-search > form {
   border-left: 1px solid #4b4441;
@@ -1742,4 +1716,12 @@ min-width:0px;
 /*reduces font size in gold Admin bar to keep page title visible*/ 
 ul.nav.navbar-nav {
         font-size:12px;
+}
+
+/* Tabbed navigation pages fixes */
+.s-lib-jqtabs ul.nav-tabs {
+    padding: 0;
+}
+.nav-tabs > li > a {
+    border: 1px solid #ddd;
 }
